@@ -1,54 +1,71 @@
 ul{
-    list-style-type:none;
-    border:1px solid #e7e7e7;
-    background-color: aquamarine;
-    overflow: hidden;
+    list-style-type: none;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    overflow:hidden;
 }
+
 li{
-    float: left;
+    float:left;
 }
-.nav_right{
-    float: right; 
+
+.nav-right{
+    float:right;
 }
 li a{
-    display: black;
-    color: blue;
-    padding: 20px;
+    display:block;
+    color:#666;
+    padding:10px;
 }
 a{
     text-decoration: none;
-    color: brown;
+    color:#008CBA;
 }
 li a:hover{
-    background-color: cornsilk;
+    background-color: #dddddd;
 }
 li a.active{
-    background-color: rgb(red, green, blue);
-    color:black;
-    
-}
-div{
-    border: 2px;
-    border-radius: 15px;
-    box-shadow: 15px 10px 0px dimgray;
-    background-image: linear-gradient(black,blue);
-    background-image:radial-gradient(white,grey) ;
-
-}
-table{
-    width:100px;
-    border-collapse: collapse;
-
-}
-thead{
-    background-color: rgb(red, green,black);
+    background-color:  rgb(76, 175, 80);
     color:white;
-    
+}
+div:not(.searchbar,#mytable){
+    border:3px dotted;
+    border-radius: 15px;
+    box-shadow: -15px -10px 0px dimgray;
+    background-image:radial-gradient(white,blue)
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+thead {
+    background-color: rgb(76, 175, 80);
+    color:white;
 }
 thead tr{
     text-align: center;
-
 }
 tbody tr:nth-child(odd){
-    background-color: lightgray;
+    background-color: lightgrey;
+}
+
+.searchbar{
+    width:30%;
+    border:1px;
+    border-style: solid;
+    border-color: lightgrey;
+    border-radius:24px;
+    display:flex;
+}
+.searchbox{
+    width:80%;
+    padding:8px;
+    border:none;
+    margin: 0 2px;
+    outline:none;
+}
+
+.searchbar:hover{
+    box-shadow: 25px 25px 25px dimgrey;
 }
