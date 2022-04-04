@@ -1,77 +1,67 @@
 <html>
     <head>
-        <title>Student List</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script>
-            var arr=[['20162415', 'Ali','FCIT','user.png'],['20136152','mona','FCIT','user.png'],['20162415', 'Ali','FCIT','user.png']]
-        </script>
+        <title>DM324 - Student List</title>
     </head>
-    <body onload="init();">
-       <!--nav-->
-       <nav>
-        <ul>
-  <li>  <a  href="index.html" target="_blank">Home</a></li>
-   <li> <a class="active" href="Studentlist.html" target="_blank">Student List</a></li>
-   <li> <a href="newstudent.html" target="_blank">New Student</a></li>
-   <li class="nav-right"><a href="#" target="_blank">Logout</a></li>
- </ul>
- </nav>
-       <!--#nav-->
-       <hr>
 
-       <div class="searchbar">
-           <input type="search" name="search" class="searchbox">
-       </div>
-       <!--Sec-->
+    <body>
 
-       <div id="mytable"> </div>
-        
-      
 
-       <!--#sec-->
-       <hr>
-      
-       
+        <a href="#"  >Home</a>
+        <a href="studentlist.html" >Students List</a>
+        <a href="#" >New Student</a>
 
-    <script>
-        function init(){
-            var count=0;
-            var mytable='';
-            mytable+='<table border="1">'+
-                      '<thead>'+
-                        '<tr>'+
-                    '<td>ID</td>'+
-                    '<td>Name</td>'+
-                    '<td>Faculty</td>'+
-                    '<td>image</td>'+
-                '</tr>'+
-                '</thead>'+
-            '<tbody>';
-            for(let i=0;i<arr.length;i++){
-                var studentID=arr[i][0];
-                var studentName=arr[i][1];
-                var studentFaculty=arr[i][2];
-                var studentImage=arr[i][3];
+<hr/>
+<!--table-->
+<table border="1">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Faculty</td>
+            <td>Image</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="2">
+                <ul>
+                    <li>3469</li>
+                    <li>Basant</li>
+                </ul>
+            </td>
+           
+            <td>Computers and information technology</td>
+            <td ><img src="Images/student.jpg" alt="Student" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td>3469</td>
+            <td>
+                Basant Adel
+            </td>
+            <td>Computers and information technology</td>
+            <td ><img src="Images/student.jpg" alt="Student" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td>3469</td>
+            <td>
+                Basant Adel
+            </td>
+            <td>Computers and information technology</td>
+            <td ><img src="Images/student.jpg" alt="Student" width="100" height="100"></td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">No. of Students: 1</td>
+        </tr>
+    </tfoot>
+</table>
+<hr/>
+<!--footer-->
+ <a href ="http://www.fue.edu.eg" target="_blank">&copy; Future University in Egypt</a>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;
+ <a href="mailto:20132627@fue.edu.eg">contact us</a>
+<!--#footer-->
 
-                mytable+='<tr><td>'+studentID+'</td>'+
-                          '<td>'+studentName+'</td>'+
-                           '<td>'+studentFaculty+'</td>'+
-                           '<td>'+'<img src="images//'+studentImage+'" width="30px" height="30px" alt="image of'+studentName+'">'+'</td></tr>';
-                        count++;
-
-            }
-                mytable+='</tbody>';
-                mytable+='<tfoot><tr><td colspan="4"> Total number of students:'+count+'</td></tr></tfoot></table>';
-          
-        document.getElementById("mytable").innerHTML=mytable;
-        
-        }
-    </script>
-
-    </body>
-    <footer>
-        Copyright &copy; <a href="https://www.fue.edu.eg/" target="_blank">Future University in Egypt</a> &nbsp;&mdash;&nbsp;
-       <a href="mailto:abc@gmail.com" target="_blank">Contact Us</a>
-    </footer>
+</body>
 
 </html>
