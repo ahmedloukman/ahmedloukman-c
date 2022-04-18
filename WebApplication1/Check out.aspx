@@ -33,7 +33,9 @@
             <p class="exp_text2">CVV</p>
             <input type="password" class="inputbox" name="cvv" id="cvv"  />
         </div>
-            <p></p>
+            <p>
+                <asp:Label ID="Label1" runat="server" Text="Total : 60.0 $"></asp:Label>
+                </p>
             <button type="submit" class="button">CheckOut</button>
           
         </div>
