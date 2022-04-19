@@ -68,6 +68,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Add to cart.aspx" />
+    <Content Include="App_Data\Library System.mdf" />
+    <Content Include="App_Data\Library System_log.ldf">
+      <DependentUpon>Library System.mdf</DependentUpon>
+    </Content>
     <Content Include="Check out.aspx" />
     <Content Include="Web.config" />
     <Content Include="Signup.aspx" />

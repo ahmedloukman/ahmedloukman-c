@@ -25,7 +25,7 @@
                 <tr>
                     <td class="auto-style2">
                         <asp:Label ID="Label1" runat="server" Text="Enter your E-mail"></asp:Label>
-&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;
                         <asp:TextBox ID="TextBox1" runat="server" Width="255px"></asp:TextBox>
                     </td>
                     <td class="auto-style2"></td>
