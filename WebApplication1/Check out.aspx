@@ -13,30 +13,39 @@
           
             <h1>CheckOut</h1>
             <h2>Payment Information</h2>
-            <p>Card holder Name</p>
-            <input type="text" class="inputbox" name="name"  />
-            <p>Card Number</p>
-            <input type="number" class="inputbox" name="card_number" id="card_number"  />
-
-            <p>Card Type</p>
-            <select class="inputbox" name="card_type" id="card_type" >
-              <option value="">Select a Card Type</option>
-              <option value="Visa">Visa</option>
-              <option value="PayPal">PayPal</option>
-              <option value="MasterCard">MasterCard</option>
-            </select>
-<div class="expc">
+            <p>
+                <asp:Label ID="Label2" runat="server" Text="Card holder Name"></asp:Label>
+                </p>
+                <asp:TextBox ID="CHN" runat="server"></asp:TextBox>
+&nbsp;<p>Card Number</p>
+                <asp:TextBox ID="CN" runat="server" TextMode="Number"></asp:TextBox>
+&nbsp;<p>Card Type</p>
+                <p>
+                    <asp:DropDownList ID="DropDownList1" runat="server">
+                        <asp:ListItem>-Select Card Type-</asp:ListItem>
+                        <asp:ListItem Value="V">Visa</asp:ListItem>
+                        <asp:ListItem Value="P">PayPal</asp:ListItem>
+                    </asp:DropDownList>
+                </p>
+            &nbsp;<div class="expc">
 
             <p class="exp_text">Expiry</p>
-            <input type="date" class="inputbox" name="exp_date" id="exp_date"  />
-
-            <p class="exp_text2">CVV</p>
-            <input type="password" class="inputbox" name="cvv" id="cvv"  />
-        </div>
+            <asp:TextBox ID="CHN1" runat="server" TextMode="Date"></asp:TextBox>
+&nbsp;<p class="exp_text2">CVV</p>
+            <asp:TextBox ID="CHN2" runat="server" TextMode="Number"></asp:TextBox>
+&nbsp;</div>
             <p>
-                <asp:Label ID="Label1" runat="server" Text="Total : 60.0 $"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="Total "></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </p>
-            <button type="submit" class="button">CheckOut</button>
+                <p>
+                &nbsp;<asp:TextBox ID="TextBox1" runat="server" TextMode="Number"></asp:TextBox>
+                </p>
+            
+          
+                <br />
+                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Check out" />
+            
           
         </div>
       </div>
