@@ -21,7 +21,7 @@ namespace WebApplication1
 
             conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|Library System.mdf;Integrated Security=True";
 
-            string strInsert = string.Format("INSERT INTO Members Values('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", CHN2.Text, CHN.Text, CN.Text, DropDownList1.SelectedValue, CHN1.Text);
+            string strInsert = string.Format("INSERT INTO Check Values('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", CHN2.Text, CHN.Text, CN.Text, DropDownList1.SelectedValue, CHN1.Text,TextBox1.Text);
 
             SqlCommand cmd = new SqlCommand(strInsert, conn);
 
